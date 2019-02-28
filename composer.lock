@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6eda0ff4228ca5e61c54355be27894e7",
+    "content-hash": "005a6ee6c858b568045a95280ba48baa",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -1140,6 +1140,74 @@
             "time": "2018-10-12T19:39:35+00:00"
         },
         {
+            "name": "laravelcollective/html",
+            "version": "v5.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/777b6d390811ba249255ed5750bf17a019cd88a5",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.7.*",
+                "illuminate/routing": "5.7.*",
+                "illuminate/session": "5.7.*",
+                "illuminate/support": "5.7.*",
+                "illuminate/view": "5.7.*",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "illuminate/database": "5.7.*",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.7-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Collective\\Html\\HtmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Collective\\Html\\FormFacade",
+                        "Html": "Collective\\Html\\HtmlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "https://laravelcollective.com",
+            "time": "2018-09-05T18:32:53+00:00"
+        },
+        {
             "name": "lcobucci/jwt",
             "version": "3.2.5",
             "source": {
@@ -1407,6 +1475,59 @@
                 "server"
             ],
             "time": "2018-11-21T21:42:43+00:00"
+        },
+        {
+            "name": "martinlindhe/laravel-vue-i18n-generator",
+            "version": "0.1.36",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martinlindhe/laravel-vue-i18n-generator.git",
+                "reference": "63dc695a659c8612e456159f54d9e995be042093"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martinlindhe/laravel-vue-i18n-generator/zipball/63dc695a659c8612e456159f54d9e995be042093",
+                "reference": "63dc695a659c8612e456159f54d9e995be042093",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MartinLindhe\\VueInternationalizationGenerator\\GeneratorProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MartinLindhe\\VueInternationalizationGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Lindhe",
+                    "email": "martin@ubique.se"
+                }
+            ],
+            "description": "Generates a vue-i18n compatible include file from your Laravel translations.",
+            "homepage": "http://github.com/martinlindhe/laravel-vue-i18n-generator",
+            "keywords": [
+                "laravel",
+                "vue-i18n"
+            ],
+            "time": "2019-02-21T14:17:50+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3566,6 +3687,60 @@
                 "environment"
             ],
             "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "webpatser/laravel-uuid",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webpatser/laravel-uuid.git",
+                "reference": "a7ce65cdabbc9970fc2a87fdf67b48e0b1641d23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webpatser/laravel-uuid/zipball/a7ce65cdabbc9970fc2a87fdf67b48e0b1641d23",
+                "reference": "a7ce65cdabbc9970fc2a87fdf67b48e0b1641d23",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "~1.4",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webpatser\\Uuid\\UuidServiceProvider"
+                    ],
+                    "aliases": {
+                        "Uuid": "Webpatser\\Uuid\\Uuid"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Webpatser\\Uuid": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Kempen",
+                    "email": "christoph@downsized.nl"
+                }
+            ],
+            "description": "Laravel package to generate and to validate a universally unique identifier (UUID) according to the RFC 4122 standard. Support for version 1, 3, 4 and 5 UUIDs are built-in.",
+            "homepage": "https://github.com/webpatser/uuid",
+            "keywords": [
+                "UUID RFC4122"
+            ],
+            "time": "2017-10-04T07:47:40+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
