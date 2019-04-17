@@ -27,6 +27,6 @@ class CountWordsController extends Controller
                     $result[$key] = 1;
             }
         }
-        return response()->json($result);
+        return response()->json($result)->header('Access-Control-Allow-Origin', '*');
     }
 }
