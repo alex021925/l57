@@ -14,7 +14,7 @@ class CountWordsController extends Controller
      */
     public function countWords(CountWordsRequest $request){
         $sentence = $request->get('sentence');
-        $split = preg_split("/[^a-zA-z]+/", $sentence);
+        $split = preg_split("/[^a-zA-Z]+/", $sentence);
         $result = [];
         foreach ($split as $item) {
 //            $key = strtoupper($item); //change if it is not case sensitive
@@ -23,10 +23,12 @@ class CountWordsController extends Controller
                 $result[$key] = $result[$key] +1;
             }
             else{
-                if($key!='')
+                if($key!=''){
                     $result[$key] = 1;
+                }
             }
         }
+        $result = count($result) > 0 ? $result : null;
         return response()->json($result)->header('Access-Control-Allow-Origin', '*');
     }
 }
