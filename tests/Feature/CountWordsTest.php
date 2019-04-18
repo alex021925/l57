@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Psy\Util\Json;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -69,9 +70,7 @@ class CountWordsTest extends TestCase
         $request = [
             "sentence" => ""
         ];
-        $responseValue =    [
-
-            ];
+        $responseValue =  [];
         $response = $this->json('POST', 'api/v1/countwords', $request);
         $response
             ->assertStatus(200)
